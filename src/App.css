@@ -6,61 +6,40 @@
 }
 
 body, html {
-  height: 100vh;
-  background-color: #d4edda;
   margin: 0;
   padding: 0;
   width: 100%;
-  /* Removed the flex display, justify-content, and align-items that were centering everything */
-}
-
-.app {
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%; /* Changed from 90% to 100% */
-  max-width: 100%; /* Changed from 1200px to 100% */
-  background: white;
-  padding: 30px;
-  border-radius: 0; /* Removed rounded corners for full-width appearance */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  min-height: 100vh; /* Make sure it fills the full height */
+  justify-content: center;
 }
 
-header {
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  text-align: center;
-  margin-bottom: 20px;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-h1 {
-  color: #ff4500;
-  font-size: 3rem;
-  margin-bottom: 10px;
+h1, h2 {
+  margin: 10px 0;
   text-align: center;
-  text-shadow: 
-  -1px -1px 0 #000,  
-   1px -1px 0 #000,
-  -1px  1px 0 #000,
-   1px  1px 0 #000;
-}
-
-h2 {
-  font-size: 1.3rem;
-  color: #333;
-  text-align: center;
-  margin-bottom: 20px;
 }
 
 .card-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 15px;
+  gap: 1rem;
   width: 100%;
-  max-width: 100%; /* Changed from 1000px to 100% */
-  justify-content: center;
+  max-width: 1200px;
   padding: 20px;
+  box-sizing: border-box;
 }
 
 .card {
