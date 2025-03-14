@@ -1,34 +1,36 @@
 * {
   margin: 0;
-  padding: 0; /* Changed from auto to 0 */
+  padding: 0;
   box-sizing: border-box;
   font-family: 'Times New Roman', sans-serif;
 }
 
 body, html {
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: #d4edda;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  /* Removed the flex display, justify-content, and align-items that were centering everything */
 }
 
 .app {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 90%;
-  max-width: 1200px; /* Increased width for better spacing */
+  width: 100%; /* Changed from 90% to 100% */
+  max-width: 100%; /* Changed from 1200px to 100% */
   background: white;
   padding: 30px;
-  border-radius: 15px;
+  border-radius: 0; /* Removed rounded corners for full-width appearance */
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   text-align: center;
+  min-height: 100vh; /* Make sure it fills the full height */
 }
 
 header {
   width: 100%;
-  text-align: center; /* Ensure header content is centered */
+  text-align: center;
   margin-bottom: 20px;
 }
 
@@ -41,7 +43,7 @@ h1 {
   -1px -1px 0 #000,  
    1px -1px 0 #000,
   -1px  1px 0 #000,
-   1px  1px 0 #000; /* Black border around the letters */
+   1px  1px 0 #000;
 }
 
 h2 {
@@ -53,19 +55,19 @@ h2 {
 
 .card-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjusted for more width */
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 15px;
   width: 100%;
-  max-width: 1000px;
+  max-width: 100%; /* Changed from 1000px to 100% */
   justify-content: center;
   padding: 20px;
 }
 
 .card {
   background-color: white;
-  border: 2px solid black; /* Add black border to card containers */
+  border: 2px solid black;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Default shadow */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   padding: 15px;
   text-align: center;
   cursor: pointer;
@@ -74,20 +76,21 @@ h2 {
 
 .card:hover {
   transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); /* Larger shadow when hovered */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
 }
 
 .card img {
-  transition: transform 0.2s ease-in-out; /* Smooth transition for zoom effect */
+  transition: transform 0.2s ease-in-out;
 }
 
 .card:hover img {
-  transform: scale(1.2); /* Slight zoom effect on hover */
+  transform: scale(1.2);
 }
 
 #gameWrapper {
-  margin: 0 auto;
-  max-width: 1200px;
+  margin: 0;
+  max-width: 100%; /* Changed from 1200px to 100% */
+  width: 100%;
 }
 
 .gameContainer {
