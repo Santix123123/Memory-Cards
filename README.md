@@ -4,7 +4,7 @@ A memory card game built with React and Vite. This project demonstrates the use 
 
 ## Screenshot
 
-![Screenshot of My Memory Card Project](path/to/screenshot.png)
+![Screenshot of My Memory Card Project](Screenshot_2025-03-15_01-05-27.png)
 
 ## Technologies Used:
 
